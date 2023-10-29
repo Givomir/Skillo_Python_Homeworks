@@ -135,16 +135,16 @@
  #   12345
 
 num = int(input("Input the number "))
-for a in range(1, (num - 4)):
-    for b in range(1, (num - 3)):
-        for c in range(1, (num - 2)):
-            for d in range(1, (num - 1)):
-                for e in range(1, num):
+for a in range(1, ((num + 1) - 4)):
+    for b in range(1, ((num + 1) - 3)):
+        for c in range(1, ((num + 1) - 2)):
+            for d in range(1, ((num + 1) - 1)):
+                for e in range(1, (num + 1)):
                     print(f"""
-                     {a},
-                        {b},
-                        {c},
-                        {d},
-                        {e}
+                        {a},
+                        {a}, {b},
+                        {a}, {b}, {c},
+                        {a}, {b}, {c}, {d},
+                        {a}, {b}, {c}, {d}, {e}
                      """)
 
